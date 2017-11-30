@@ -38,7 +38,7 @@ int main(int argc, char* argv[])
             c = getc(file);
             if(word_find == 1){ /*if begin of word are simple*/
                 pos_word++;
-                if(strlen(word) == pos_word){ /*if word was found*/
+                if((int)strlen(word) == pos_word){ /*if word was found*/
                     pos_word = 0;
                     word_find = 0;
                     printf("\nResult:\n%d:%d %s\n", line, position - (int)strlen(word), word);
