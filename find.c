@@ -41,7 +41,7 @@ int main(int argc, char* argv[])
                 if(strlen(word) == pos_word){ /*if word was found*/
                     pos_word = 0;
                     word_find = 0;
-                    printf("\nResult:\n%d:%d %s\n", line, position - strlen(word), word);
+                    printf("\nResult:\n%d:%d %s\n", line, position - (int)strlen(word), word);
                     finish = 1;
                 } else
                     if(c != word[pos_word]){
