@@ -1,2 +1,2 @@
-# File_find
+# FileFind
 Find a word in a given file
